@@ -25,17 +25,4 @@ body {
     text-align: center;
     margin-bottom: 0.15em;
   }
-.imageCont{
-    display: flex;         /* Flexbox to align content */
-    justify-content: center; 
-    background: #faf3e6;
-    padding-top: 3rem;
 
-}
-  img {
-    justify-content: center; 
-    border-radius: 40%;
-    width: 200px;            /* Set desired width */
-    height: 200px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
