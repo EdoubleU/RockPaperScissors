@@ -1,19 +1,15 @@
+// Running score 
+let userScore = 0;
+let compScore = 0;
 
-//player selects r,p,s
-//computer randomly selects r,p,s
-//compare player and comp results
-//add score to winner
-//allow for continued play
+// User choice
+function getUserChoice() {
+    let userChoice = window.prompt(
+        `It is time to smash, cut, or smother your way to victory!\nType:\n r for Rock,\n p for Paper, or\n s for Scissors`
+    );
+    userChoice = userChoice.trim().toLowerCase();
 
-let humanScore = 0;
-let computerScore = 0;
-let roundCount = 0;
-
-function getComputerChoice() {
-    let compSelects = Math.round(Math.random() * 2) + 1;
-
-    if (compSelects === 1) {
-        console.log('The AI Super-Bot chooses Rock!');
+    if (userChoice === 'r') {
         return 'Rock';
     } else if (compSelects === 2) {
         console.log('The AI Super-Bot chooses Paper!');
